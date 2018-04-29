@@ -1,10 +1,11 @@
 <?php
+//mysql://beb630c24418ef:09007e21@us-cdbr-iron-east-05.cleardb.net/heroku_a4f6c0b5852469a?reconnect=true
 function connectToDB($dbName) {
 
 $host = 'localhost';
 $db = $dbName;
-$user = 'Iris';
-$pass = 'cst336';
+$user = 'beb630c24418ef';
+$pass = '09007e21';
 $charset = 'utf8mb4';
 
 //mysql://beb630c24418ef:09007e21@us-cdbr-iron-east-05.cleardb.net/heroku_a4f6c0b5852469a?reconnect=true
