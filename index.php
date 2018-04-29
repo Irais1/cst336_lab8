@@ -19,29 +19,52 @@
         <script>
             
             $(document).ready( function(){
-                
-                $("#submitB").click(function(){
-                    if($("#fName").empty()){
-                        $("#Fname").html("Cannot Leave this empty!")
-                        $("#Fname").css("color","red")
-                    }
-                    if($("#lName").empty()){
-                        $("#Lname").html("Cannot Leave this empty!")
-                        $("#Lname").css("color","red")
-                    }
-                    if($("#password").empty()&&$("#re-password").empty()){
-                        $("#matching").html("Enter a Password");
-                        $("#matching").css("color","red");
-                    }
-                    else if($("#password").val() != $("#re-password").val()){
+                var name =true;
+                var last = true;
+                var passMatch = true;
+                $("#re-password").change(function(){
+                    if($("#password").val() != $("#re-password").val()){
                         $("#matching").html("Passwords do not match!");
                         $("#matching").css("color","red");
+                        passMatch = false;
                     }
                     else{
                         $("#matching").html("Matching Passwords!");
                         $("#matching").css("color","green");
                     }
-                })
+                });
+                $("#submitB").click(function(){
+                    if($("#fName").val()==""){
+                        $("#Fname").html("Cannot Leave this empty!")
+                        $("#Fname").css("color","red")
+                        name = false;
+                    }
+                    else if($("#fName").val()!=""){
+                         $("#Fname").html("")
+                        $("#Fname").css("color","green")
+                        name = false;
+                    }
+                    if($("#lName").val() == ""){
+                        $("#Lname").html("Cannot Leave this empty!")
+                        $("#Lname").css("color","red")
+                        last = false;
+                    }
+                    else if(!$("#lName").val()!= ""){
+                         $("#Lname").html("")
+                        $("#Lname").css("color","green")
+                        name = false;
+                    }
+                    if($("#password").val() == ""||$("#re-password").val() == ""){
+                        $("#matching").html("Enter a Password");
+                        $("#matching").css("color","red");
+                        passMatch = false;
+                    }
+                    if(name&&passMatch&&last){
+                        $.ajax({
+                            
+                        })
+                    }
+                });
                 
                 $("#username").change(function()
                 {
