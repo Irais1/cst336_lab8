@@ -1,10 +1,8 @@
-<style type="text/css">
-    @import url(style.css);
-</style>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
+        <link href ="style.css" rel =" stylesheet" type = "text/css"/>
         <title>AJAX: Sign Up Page</title>
 
         <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
@@ -154,15 +152,15 @@
 
     <body>
     
-       <h1> Sign Up Form </h1>
+       <h1 id = "title"> Sign Up Form </h1>
     
         <form onsubmit="return validateForm()">
-            <fieldset>
-               <legend>Sign Up</legend>
+            <fieldset id = "border1">
+               <legend id ="border">Sign Up</legend>
                 First Name:  <input type="text" id = "fName"><span id="Fname"></span><br> 
                 Last Name:   <input type="text" id = "lName"><span id = "Lname"></span><br> 
-                Email:       <input type="text"><br> 
-                Phone Number:<input type="text"><br><br>
+                Email:       <input type="text" id = "email"><br> 
+                Phone Number:<input type="text" id = "phone"><br><br>
                 Zip Code:    <input type="text" id="zipCode"><span id= "Zcode"></span><br>
                 City:        <span id="city"></span>
                 <br>
@@ -194,4 +192,10 @@
         </form>
       
     </body>
+    <footer id="fter">
+            <hr>
+            CST 336. 2018&copy; Gopar<br />
+            <strong>Disclaimer:</strong> This website is used for academic purposes only.<br />
+            <img src="https://csumb.edu/sites/default/files/styles/profile_large/public/photo_1_6.jpg?itok=N4I4g9Wl" id ="img">
+        </footer>
 </html>

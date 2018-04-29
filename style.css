@@ -1,0 +1,57 @@
+body{
+    font-size: 1.5em;
+    background-color:lightblue !important;
+    color: purple;
+    padding-left: 30%;
+    padding-right: 15%;
+}
+#title{
+    color:black!important;
+}
+#fName,#lName,#email,#phone{
+    color:blue!important;
+    font-size: 1em!important;
+    
+}
+#state{
+    font-size: 1em;
+    color:blue!important;
+}
+#county{
+    font-size: 1em;
+    color: blue!important;
+}
+#county{
+    color: blue!important;
+}
+#border{
+    color: darkblue!important;
+    font-size: 1.5em;
+    border-color: white!important;
+}
+#submitB{
+    width: 10%;
+    height: 25%;
+    background-color: white;
+    color: black;
+    font-size: 1em;
+    
+}
+#zipCode{
+    font-size: 1em;
+}
+#city,#lat,#long{
+    color:blue;
+}
+#username,#password,#re-password{
+    font-size: 1em;
+    color:darkblue;
+}
+#fter{
+    text-align: center;
+    color:green;
+}
+#img{
+    height: 10%;
+    width: 10%;
+}
