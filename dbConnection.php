@@ -1,13 +1,13 @@
 <?php
 function connectToDB($dbName) {
 
-$host = 'localhost';
+$host = 'us-cdbr-iron-east-05.cleardb.net';
 $db = $dbName;
-$user = 'Iris';
-$pass = 'cst336';
+$user = 'bc1d23cb79635b';
+$pass = 'e4f61d06';
 $charset = 'utf8mb4';
 
-//mysql://beb630c24418ef:09007e21@us-cdbr-iron-east-05.cleardb.net/heroku_a4f6c0b5852469a?reconnect=true
+ //mysql://bc1d23cb79635b:e4f61d06@us-cdbr-iron-east-05.cleardb.net/heroku_c8b34ae9cd193df?reconnect=true
 //checking whether the URL contains "herokuapp" (using Heroku)
 // if(strpos($_SERVER['HTTP_HOST'], 'herokuapp') !== false) {
 //   $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
