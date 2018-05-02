@@ -2,7 +2,7 @@
 
 include 'dbConnection.php';
 
-$conn = connectToDB("lab8_user");
+$conn = connectToDB("heroku_c8b34ae9cd193df");
 
 $username = $_GET['username'];
 
